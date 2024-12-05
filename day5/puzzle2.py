@@ -33,6 +33,7 @@ for update in updates:
 for update_pages in incorrect_updates:
 
     is_correct_order = False
+    iterations = 0
 
     while is_correct_order == False:
         is_correct_order = True  # Assume correct order to begin with
@@ -48,6 +49,8 @@ for update_pages in incorrect_updates:
                 second_index = update_pages.index(second)
             else: continue
 
+            iterations += 1
+
             if first_index > second_index:
                 update_pages[first_index] = second
                 update_pages[second_index] = first
@@ -59,3 +62,4 @@ for update_pages in incorrect_updates:
     middle_pages.append(int(middle_page))
     
 print("Sum of middle page numbers are: " + str(sum(middle_pages)))
+print("Number of rule evaluations: " + str(iterations))
