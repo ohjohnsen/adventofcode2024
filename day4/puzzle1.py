@@ -1,6 +1,6 @@
 print ("Advent of Code 2024 - Day 4 - Puzzle 1")
 
-with open("day4\\input.txt", "r") as input_file:
+with open("day4/input.txt", "r") as input_file:
     puzzle = input_file.read().splitlines()
 
     height = len(puzzle)

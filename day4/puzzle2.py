@@ -1,6 +1,6 @@
 print ("Advent of Code 2024 - Day 4 - Puzzle 2")
 
-with open("day4\\input.txt", "r") as input_file:
+with open("day4/input.txt", "r") as input_file:
     puzzle = input_file.read().splitlines()
 
     height = len(puzzle)
@@ -22,4 +22,4 @@ with open("day4\\input.txt", "r") as input_file:
             if (dw_sub == "MAS" or dw_sub == "SAM") and (uw_sub == "MAS" or uw_sub == "SAM"):
                 xmas_count += 1
 
-    print("MAS is written in an X " + str(xmas_count) + " times")
+    print("MAS is written as an X " + str(xmas_count) + " times")

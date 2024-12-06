@@ -2,7 +2,7 @@ import re
 
 print ("Advent of Code 2024 - Day 3 - Puzzle 1")
 
-with open("day3\\input.txt", "r") as input_file:
+with open("day3/input.txt", "r") as input_file:
 
     program = input_file.read()
     multiplications = re.findall(r'mul\([0-9]{1,3},[0-9]{1,3}\)', program)

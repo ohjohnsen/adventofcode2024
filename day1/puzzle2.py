@@ -1,6 +1,6 @@
 print ("Advent of Code 2024 - Day 1 - Puzzle 2")
 
-with open("day1\\input.txt", "r") as input_file:
+with open("day1/input.txt", "r") as input_file:
     rows = input_file.read().splitlines()
     column1 = []
     column2 = []

@@ -1,6 +1,6 @@
 print ("Advent of Code 2024 - Day 2 - Puzzle 2")
 
-with open("day2\\input.txt", "r") as input_file:
+with open("day2/input.txt", "r") as input_file:
     reports = input_file.read().splitlines()
 
 def check_report(levels):
